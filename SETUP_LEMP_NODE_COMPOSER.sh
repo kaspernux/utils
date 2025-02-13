@@ -20,10 +20,11 @@ plain='\033[0m'
 
 # Update package list
 sudo apt update
+sudo apt install -y ufw curl nano
 
 # Install Nginx
 echo "Installing Nginx..."
-sudo apt install -y nginx
+sudo apt install -y nginx 
 sudo ufw allow 'Nginx HTTPS'
 
 # Install PHP 8.3 and necessary extensions
